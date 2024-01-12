@@ -111,10 +111,10 @@ const App = React.memo(() => {
       <MDBRow>
         {weatherData && forecast && (
           <>
-            <MDBCol className="vh -100 " md="6">
+            <MDBCol lg={6} md="12">
               <WeatherDetails data={weatherData} unit={unit} />
             </MDBCol>
-            <MDBCol md="6">
+            <MDBCol md="12" lg={6}>
               <div className="pb-2">
                 <WeatherDetailsTwo
                   data={weatherData}
