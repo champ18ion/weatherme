@@ -54,7 +54,7 @@ export default function Basic({data,unit}) {
                         icon="wind fa-fw"
                         style={{ color: "#868B94" }}
                       />{" "}
-                      <span className="ms-1"> {data.wind.speed} km/h</span>
+                      <span className="ms-1"> {data.wind.speed}  {unit === 'metric' ? 'm/s' : 'miles/hr'}</span>
                     </div>
                     <div>
                     <MDBIcon fas icon="compass" style={{ color: "#868B94" }} />{"  "}
