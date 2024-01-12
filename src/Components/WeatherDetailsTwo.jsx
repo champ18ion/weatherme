@@ -67,7 +67,7 @@ const WeatherGrid = ({ data, unit, onUnitToggle }) => {
               backgroundColor: unit === 'metric' ? '#4caf50' : '#fff',
               borderRadius: '35px',
             }}
-            onClick={() => onUnitToggle('metric')}
+            onClick={() => onUnitToggle()}
           >
             <MDBCardBody className="p-4">
               <div className="d-flex align-items-center">
@@ -90,7 +90,7 @@ const WeatherGrid = ({ data, unit, onUnitToggle }) => {
               backgroundColor: unit === 'imperial' ? '#4caf50' : '#fff',
               borderRadius: '35px',
             }}
-            onClick={() => onUnitToggle('imperial')}
+            onClick={() => onUnitToggle()}
           >
             <MDBCardBody className="p-4">
               <div className="d-flex align-items-center">

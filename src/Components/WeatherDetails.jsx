@@ -17,7 +17,6 @@ export default function Basic({data,unit}) {
     const directions = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
     const index = Math.round((degrees % 360) / 45);
     const normalizedIndex = (index + directions.length) % directions.length;
-    console.log(normalizedIndex);
     return directions[normalizedIndex];
   };
   

@@ -2,7 +2,6 @@ import React from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBIcon, MDBTypography } from 'mdb-react-ui-kit';
 
 const Forecast = ({ data, unit }) => {
-  console.log(data);
 
   // Omit the first item in the data array
   const forecastData = data.slice(1);
