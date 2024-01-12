@@ -8,6 +8,7 @@ import { MDBRow, MDBBtn, MDBCol, MDBContainer } from "mdb-react-ui-kit";
 
 const App = React.memo(() => {
   const [city, setCity] = useState("Ranchi");
+  const [error, setError] = useState(null);
   const [forecast, setForecast] = useState(null);
   const [weatherData, setWeatherData] = useState(null);
   const [unit, setUnit] = useState("metric"); // 'metric' for Celsius, 'imperial' for Fahrenheit
@@ -79,8 +80,10 @@ const App = React.memo(() => {
         }
         weatherDataCache.current[city][unit] = currentData;
         setWeatherData(currentData);
+        setError(null);
       } catch (error) {
         console.error("Error fetching data:", error);
+        setError('Error fetching weather data. Check City name & Please try again.');
         setWeatherData(null);
         setForecast(null);
       }
@@ -103,6 +106,7 @@ const App = React.memo(() => {
     <MDBContainer className="app">
       <MDBRow>
         <WeatherForm
+          error={error}
           onCityChange={handleCityChange}
           handleUnitToggle={handleUnitToggle}
         />

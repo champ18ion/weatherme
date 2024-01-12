@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { MDBBtn, MDBInput } from 'mdb-react-ui-kit';
+import { MDBBtn, MDBIcon, MDBInput } from 'mdb-react-ui-kit';
 
-const WeatherForm = ({ onCityChange, handleUnitToggle }) => {
+const WeatherForm = ({ onCityChange,error }) => {
   const [city, setCity] = useState('');
 
   const handleSubmit = (e) => {
@@ -37,6 +37,8 @@ const WeatherForm = ({ onCityChange, handleUnitToggle }) => {
           </MDBBtn>
         </div>
       </div>
+      {error && (<div className='d-flex flex-column align-items-center'><h3 style={{ color: 'red', marginTop: '10px' }}>{error}</h3>
+      <MDBIcon fas icon='exclamation-triangle' style={{ fontSize: '5rem' }} /> </div>)}
     </>
   );
 };
