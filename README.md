@@ -1,6 +1,6 @@
 # Weather App
 
-[See it Live]url(https://weatherme-three.vercel.app/)
+[See it Live](https://weatherme-three.vercel.app/)
 
 A simple weather application built with React that allows users to check the current weather and 5-day forecast for a specific city.
 
@@ -21,37 +21,7 @@ A simple weather application built with React that allows users to check the cur
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/champ18ion/weatherme.git
-
-   cd weather-app
-
-Certainly! Here is the README content in a single Markdown file:
-
-markdown
-Copy code
-# Weather App
-
-A simple weather application built with React that allows users to check the current weather and 5-day forecast for a specific city.
-
-## Features
-
-- **Current Weather:** View real-time weather details for a selected city.
-- **5-Day Forecast:** Check the weather forecast for the next 5 days, including temperature, description, and icons.
-- **Unit Toggle:** Easily switch between Celsius and Fahrenheit for temperature units.
-- **Responsive Design:** The app is designed to work seamlessly on various devices.
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js and npm installed on your machine.
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
+```bash
    git clone https://github.com/your-username/weather-app.git
    ```
 
@@ -67,7 +37,9 @@ npm install
 ```
 4. Create a .env file in the project root and add your OpenWeatherMap API key:
 
-```REACT_APP_OPENWEATHERMAP_API_KEY=your-api-key```
+```bash
+REACT_APP_OPENWEATHERMAP_API_KEY=your-api-key
+```
 
 Replace your-api-key with your actual OpenWeatherMap API key.
 
@@ -87,9 +59,9 @@ View current weather details and the 5-day forecast.
 
 
 ## Technologies Used
-React
-MDB React UI Kit
-OpenWeatherMap API
+- React
+- MDB React UI Kit
+- OpenWeatherMap API
 
 ## Contributing
 Contributions are welcome! If you find any issues or want to add new features, feel free to open an issue or submit a pull request.
