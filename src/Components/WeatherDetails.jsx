@@ -79,13 +79,3 @@ export default function Basic({data,unit}) {
 }
 
 
-{/* <h2>{data.name}</h2>
-<p>Date: {new Date(data.dt * 1000).toLocaleDateString()}</p>
-<p>Temperature: {data.main.feels_like} °C / {data.tempF} °F</p>
-<p>Min Temperature: {data.main.temp_min} °C / {data.tempMinF} °F</p>
-<p>Max Temperature: {data.main.temp_max} °C / {data.tempMaxF} °F</p>
-<p>Humidity: {data.main.humidity}%</p>
-<p>Wind: {data.wind.speed} m/s, {data.wind.deg}</p>
-<p>Description: {data.weather[0].description}</p>
-<img styles={{height:"40px",width:"40px"}} src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`} alt="Weather Icon" />
-<img src={data.weatherIcon} alt="Weather Icon" /> */}
